@@ -14,7 +14,7 @@ class Life {
     console.log(patientZero);
 
     return this.peopleData !== null && this.peopleData !== undefined 
-        ? infectionType([...this.peopleData], [patientZero])
+        ? infectionType(this.peopleData, [patientZero])
         : Life.people(null);
 
   }
